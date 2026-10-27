@@ -1,0 +1,178 @@
+.live-drive-page {
+  min-height: 100vh;
+  background-color: #f4f7f6;
+}
+
+.live-drive-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.live-drive-header {
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.live-drive-header h2 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.live-drive-header p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.monitoring-status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.driver-status-panel {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.driver-status-panel p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.driver-status-panel h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #16a34a;
+}
+
+.driver-status-panel span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* LIVE STATUS CARDS */
+.live-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.live-stat-card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.live-stat-card p {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.live-stat-card h3 {
+  font-size: 18px;
+  color: #111827;
+}
+
+/* END DRIVE */
+.end-drive-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dc2626;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.end-drive-button:hover {
+  background-color: #b91c1c;
+}
+
+/* DRIVER AWAKE */
+.driver-status-panel.awake {
+  border: 2px solid #16a34a;
+  background-color: #f0fdf4;
+}
+
+.driver-status-panel.awake h1 {
+  color: #16a34a;
+}
+
+/* DRIVER DROWSY */
+.driver-status-panel.drowsy {
+  border: 2px solid #dc2626;
+  background-color: #fef2f2;
+}
+
+.driver-status-panel.drowsy h1 {
+  color: #dc2626;
+}
+
+/* SIMULATION BUTTONS */
+.simulate-drowsy-button,
+.simulate-awake-button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.simulate-drowsy-button {
+  background-color: #dc2626;
+  color: white;
+  border: 1px solid #dc2626;
+}
+
+.simulate-drowsy-button:hover {
+  background-color: #b91c1c;
+}
+
+.simulate-awake-button {
+  background-color: white;
+  color: #16a34a;
+  border: 1px solid #16a34a;
+}
+
+.simulate-awake-button:hover {
+  background-color: #f0fdf4;
+}
+
+.history-empty + .history-empty {
+  margin-top: 16px;
+}
+
+@media (max-width: 800px) {
+  .live-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .live-stats {
+    grid-template-columns: 1fr;
+  }
+}

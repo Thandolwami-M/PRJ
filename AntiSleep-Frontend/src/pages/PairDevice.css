@@ -1,0 +1,228 @@
+.pair-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+.pair-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.pair-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.pair-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background-color: #111827;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pair-brand h2 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.pair-brand p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.pair-card {
+  background-color: white;
+  padding: 36px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.pair-card h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.pair-card p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.scan-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111827;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scan-button:hover {
+  background-color: #374151;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #111827;
+  text-decoration: underline;
+}
+
+.device-found {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f9fafb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.device-found h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.device-found p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.connect-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  background-color: #374151;
+}
+
+.device-connected {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  background-color: #f0fdf4;
+  text-align: center;
+}
+
+.device-connected h3 {
+  color: #16a34a;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.device-connected p {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.continue-button {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background-color: #111827;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.continue-button:hover {
+  background-color: #374151;
+}
+
+.disconnect-button {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 20px;
+
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+
+  background-color: white;
+  color: #dc2626;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.disconnect-button:hover {
+  background-color: #fef2f2;
+}
+
+@media (max-width: 600px) {
+  .pair-page {
+    align-items: flex-start;
+    padding: 30px 16px;
+  }
+
+  .pair-card {
+    padding: 28px 18px;
+  }
+
+  .pair-card h1 {
+    font-size: 23px;
+  }
+
+  .pair-brand {
+    margin-bottom: 20px;
+  }
+
+  .device-found {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .connect-button {
+    width: 100%;
+  }
+
+  .continue-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
